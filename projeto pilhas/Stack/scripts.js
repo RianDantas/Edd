@@ -61,7 +61,3 @@ function isEmpty(){
 function size(){
     return stack.length;
 }
-
-
-
-
