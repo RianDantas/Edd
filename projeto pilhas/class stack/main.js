@@ -27,7 +27,11 @@ class Stack{
 const s = new Stack();
 
 function mostrarPilha(){
-    document.querySelector('#resultado').innerHTML = "<div> Resultado: " + s.stack + " </div>";
+
+    
+    document.querySelector('#resultado').innerHTML = "<div>"+  "Resultado: " + s.stack + " </div>";
+    
+    
 }
 
 function clickPush(){
