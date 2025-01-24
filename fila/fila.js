@@ -9,13 +9,11 @@ function dequeue(){
 }
 
 function front(){
-    if(queue.length === 0){
-        return null
-    }
+    return queue[0]
 }
 
 function size(){
-    return queue.length === 0
+    return queue.length
 }
 
 function printQueue(){
@@ -25,9 +23,9 @@ function printQueue(){
 
 
 
-// function mostrarResultado(){
-//     document.querySelector('#resultado').innerHTML = ;
-// }
+function mostrarResultado(){
+    document.querySelector('#resultado').innerHTML = queue
+}
 
 
 function clickEnqueue(){
@@ -40,13 +38,18 @@ function clickDequeue(){
 }
 
 function clickFront(){
-    front()
+    console.log(front())
+    let f = front()
+    document.querySelector('#resultado').innerHTML = f
 }
 
 function clickSize(){
     console.log(size())
+    let t = size()
+    document.querySelector('#resultado').innerHTML = t
 }
 
 function clickPrint(){
-    document.querySelector('#resultado').innerHTML = printQueue();
+    console.log(printQueue())
+    mostrarResultado()
 }
