@@ -5,22 +5,27 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="style.css">
     <script src='main.js'></script>
 </head>
 <body>
-    <p>Digite um número: </p>
-    <input type="number" id='num'>
-    <button onclick="clickEnqueue()">enfileirar</button>
-    <button onclick="clickDequeue()">desenfileirar</button>
-    <button onclick="clickFront()">Frente</button>
-    <button onclick="clickSize()">tamanho</button>
-    <button onclick="clickPrint()">Mostrar</button>
-
-    <div >
-        <p id="resultado"></p>
+    <div class="formulario">
+        <p>Digite um número: </p>
+        <input type="number" id='num'>
+        <div class="f2">
+        <button onclick="clickEnqueue()">enfileirar</button>
+        <button onclick="clickDequeue()">desenfileirar</button>
+        <button onclick="clickFront()">Frente</button>
+        <button onclick="clickSize()">tamanho</button>
+        <button onclick="clickPrint()">Mostrar</button>
     </div>
+        <div id="resultado" >
+            <p></p>
+        </div>
 
+    
+
+</div>
     
     <script src="fila.js"></script>
 </body>

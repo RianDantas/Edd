@@ -1,0 +1,60 @@
+body{
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formulario{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 160px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+
+}
+
+#num{
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    width: 95%;
+    border-radius: 1px;
+}
+
+.f2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    
+}
+
+button{
+    background-color: aqua;
+    margin: 2px;
+    border-radius: 1px;
+    
+}
+
+p{
+    margin: auto;
+}
+
+#resultado{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+#DIV{
+    background-color: brown;
+}
