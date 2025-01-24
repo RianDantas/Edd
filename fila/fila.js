@@ -24,7 +24,15 @@ function printQueue(){
 
 
 function mostrarResultado(){
-    document.querySelector('#resultado').innerHTML = queue
+    for (i of queue){
+        console.log(i)
+        var div = document.createElement("DIV");
+        var resultado = document.getElementById('resultado')
+        div.innerHTML = i;
+        resultado.appendChild(div);
+    }
+
+    // document.querySelector('#resultado').innerHTML = queue
 }
 
 
