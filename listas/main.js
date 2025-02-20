@@ -11,7 +11,7 @@ class Node {
     }
 }
 
-class linkeList{
+class linkedList{
     constructor(){
         this.head = null
         this._size = 0
@@ -105,3 +105,8 @@ class linkeList{
 
 
 }
+
+const list = new linkedList()
+
+function clickAppend(){
+    let valor = document.getElementById('valor').value
