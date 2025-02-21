@@ -6,7 +6,7 @@ class Node {
 
     toString(){
         return this.next!==null
-        ? this.element + "->" + this.next.toString()
+        ? this.element + "  -  " + this.next.toString()
         : this.element
     }
 }
@@ -124,10 +124,14 @@ class linkedList{
 
 const list = new linkedList()
 
+function mostrarValor(){
+    document.querySelector('#resultado').innerHTML = list.toString()
+}
+
 function clickAppend(){
     let valor = document.getElementById('valor').value
     list.append(valor)
-    
+    mostrarValor()
     console.log(list.toString())
 }
 
@@ -136,12 +140,14 @@ function clickInsert(){
     let posicao = document.getElementById('posicao').value
 
     list.insert(posicao, insert)
+    mostrarValor()
     console.log(list.toString())
 }
 
 function clickRemove(){
     let element = document.getElementById('remove').value
     list.remove(element)
+    mostrarValor()
     console.log(list.toString())
     console.log(element)
 }
@@ -149,6 +155,7 @@ function clickRemove(){
 function clickRemoveAt(){
     let posicao = document.getElementById('remove').value
     list.removeAt(posicao)
+    mostrarValor()
     console.log(list.toString())
     
 }
@@ -159,7 +166,9 @@ function clickIndexOf(){
 }
 
 function clickSize(){
-    console.log(list.size()  )
+    console.log(list.size())
+    document.querySelector('#resultado').innerHTML = list.size()
+
 }
 
 function clickClear(){

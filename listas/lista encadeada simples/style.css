@@ -1,0 +1,54 @@
+#centro{
+    margin: auto;
+    background-color: rgb(236, 236, 236);
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+h1{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    margin-left: 38%;
+}
+
+input{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 40px;
+    border: 0;
+}
+
+p{
+    margin-left: 4.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+    width: 25%;
+    height: 30px;
+    margin-left: 38%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #54bb00;
+    border: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+#res{
+
+}
+
+#resultado{
+    padding: 10px;
+    border: #dddddd;
+    border-style: solid;
+    border-radius: 10px;
+    margin-right: 5%;
+    background-color: white;
+}
