@@ -20,7 +20,7 @@ class linkedList{
 
     append(element){
         const node = new Node(element)
-        if(this._size() === 0){
+        if(this.size() === 0){
             this.head = node
         } else {
             let current = this.head
@@ -54,26 +54,42 @@ class linkedList{
     }
 
     remove(element){
+        
         const pos = this.indexOf(element)
-        if(pos < 0){
+        if (pos >= 0) {  
             this.removeAt(pos)
         }
     }
 
     removeAt(position){
-        if(posistin >= this.size()){
-            console.log('Posição inválida. Escolha o intervalo de 0 até ${this.size() - 1}')
+
+        if (position >= this.size()) {
+            console.log(`Posição inválida. Escolha o intervalo de 0 até ${this.size() - 1}`)
             return
+        }
+
+        if (position == 0) {
+            this.head = this.head.next
+            this._size--
+        } else if (position > 0  && position < this.size()) {
+            let pos = 0
+            let current = this.head
+            while(pos < position - 1){
+                current = current.next
+                pos++
+            } 
+            current.next = current.next.next
+            this._size--
         }
 
     }
 
     indexOf(element){
-        if(this.size() > 0){
+        if (this.size() > 0) {
             let pos = 0
             let current = this.head
-            while(current.nex !== null){
-                if(current.element == element){
+            while (current !== null) {
+                if (current.element == element) {
                     return pos
                 }
                 pos++
@@ -110,3 +126,42 @@ const list = new linkedList()
 
 function clickAppend(){
     let valor = document.getElementById('valor').value
+    list.append(valor)
+    
+    console.log(list.toString())
+}
+
+function clickInsert(){
+    let insert = document.getElementById('insert').value
+    let posicao = document.getElementById('posicao').value
+
+    list.insert(posicao, insert)
+    console.log(list.toString())
+}
+
+function clickRemove(){
+    let element = document.getElementById('remove').value
+    list.remove(element)
+    console.log(list.toString())
+    console.log(element)
+}
+
+function clickRemoveAt(){
+    let posicao = document.getElementById('remove').value
+    list.removeAt(posicao)
+    console.log(list.toString())
+    
+}
+
+function clickIndexOf(){
+    let index = document.getElementById('index').value
+    console.log(list.indexOf(index))
+}
+
+function clickSize(){
+    console.log(list.size()  )
+}
+
+function clickClear(){
+    list.clear()
+}

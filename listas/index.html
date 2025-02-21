@@ -5,16 +5,42 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
     <script src='main.js'></script>
 </head>
 <body>
     <h1>Lista Ligada</h1>
 
-    <form>
+    
         <p>Adicione algo na lista:</p>
+
         <input id="valor">
-        <button onclick="clickAppend">Append</button>
-    </form>
+
+        <button onclick="clickAppend()">Append</button>
+
+        <p>Inserir em determinada posição:</p>
+
+        <input id="insert" placeholder="valor">
+        <input id="posicao" placeholder="posição">
+        <button onclick="clickInsert()">Append</button>
+
+        <p>Remover um elemento</p>
+        <input id="remove" placeholder="valor">
+        <button onclick="clickRemove()">Remover</button>
+
+        <p>Remover um elemento em posição específica</p>
+        <input type="number" id="remove" placeholder="valor">
+        <button onclick="clickRemoveAt()">Remover</button>
+
+        <p>Descobrir a posição de um elemento</p>
+        <input id="index" placeholder="valor">
+        <button onclick="clickIndexOf()">Remover</button>
+
+        <button onclick="clickSize()">Ver tamanho</button>
+
+        <button onclick="clickClear()">Apagar lista</button>
+
+        
+    
 </body>
 </html></html>
