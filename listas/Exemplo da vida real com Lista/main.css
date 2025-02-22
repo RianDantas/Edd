@@ -1,0 +1,62 @@
+
+body{ 
+    font-family: Arial, sans-serif;
+    background-color: #D0D0D0;  
+    
+}
+
+.centro{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    background-color: #D0D0D0;
+    
+}
+
+#video{
+    width: 50%;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    
+}
+
+ul{
+    list-style: none; 
+    padding: 0; 
+    width: 300px; 
+    margin: auto;
+    
+}
+
+li{ 
+    background: #ffffff; 
+    padding: 10px; 
+    margin: 5px 0;
+    border-radius: 5px;
+    height: 40px;
+    cursor: grab; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+button{
+    cursor: pointer;
+}
+
+#adicionar { 
+    cursor: pointer;
+    margin: 15px;
+    background-color: #FE0000; 
+    border: 0;
+    height: 40px;
+    border-radius: 20%;
+    font-family: 'Bebas Neue';
+    color: #ffffff;
+}
+
+img{
+    height: 500px;
+}

@@ -162,6 +162,7 @@ function clickRemoveAt(){
 
 function clickIndexOf(){
     let index = document.getElementById('index').value
+    document.querySelector('#resultado').innerHTML = list.indexOf(index)
     console.log(list.indexOf(index))
 }
 
@@ -173,4 +174,5 @@ function clickSize(){
 
 function clickClear(){
     list.clear()
+    mostrarValor()
 }
