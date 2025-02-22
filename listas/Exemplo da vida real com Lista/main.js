@@ -1,12 +1,5 @@
 const items = []
 
-function clear(){
-    console.log("estou no clear()")
-    items.length = 0
-    let playlist = document.get("playlist")
-    playlist.parentElement.removeChild(playlist)
-}
-
 function addVideo() {
     console.log("estou no addVideo()")
     const video = document.getElementById("video").value
